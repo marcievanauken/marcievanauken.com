@@ -82,7 +82,7 @@ h6 {
 .btn-primary:active,
 .btn-primary.active,
 .open .dropdown-toggle.btn-primary {
-    border-color: #f6bf01;
+    border-color: #ff6634;
     color: #fff;
     background-color: #ff6634;
 }
@@ -119,14 +119,15 @@ fieldset[disabled] .btn-primary.active {
 
 .btn-xl {
     padding: 20px 40px;
-    border-color: #ff6634;
-    border-radius: 3px;
-    text-transform: uppercase;
-    font-family: Montserrat,"Helvetica Neue",Helvetica,Arial,sans-serif;
+    border-color: #000;
+    border-radius: 10px;
+    /*text-transform: uppercase;*/
+    font-family: Signika,"Helvetica Neue",Helvetica,Arial,sans-serif;
     font-size: 18px;
-    font-weight: 700;
-    color: #fff;
-    background-color: #ff6634;
+    font-weight: 300;
+    color: #000;
+    background-color: #fff;
+    letter-spacing: 1pt;
 }
 
 .btn-xl:hover,
@@ -134,7 +135,7 @@ fieldset[disabled] .btn-primary.active {
 .btn-xl:active,
 .btn-xl.active,
 .open .dropdown-toggle.btn-xl {
-    border-color: #f6bf01;
+    border-color: #ff6634;
     color: #fff;
     background-color: #ff6634;
 }
@@ -229,7 +230,67 @@ fieldset[disabled] .btn-xl.active {
     color: #ff6634;
 }
 
-@media(min-width:768px) {
+@media all and (max-width: 480px) {
+       .navbar-default {
+        padding: 11px 0 20px 0;
+        -webkit-transition: padding .3s;
+        -moz-transition: padding .3s;
+        transition: padding .3s;
+    }
+
+    .navbar-default .navbar-brand {
+        font-size: 13pt;
+        width:74%;
+/*        -webkit-transition: all .3s;
+        -moz-transition: all .3s;
+        transition: all .3s;*/
+    }
+
+    .navbar-default .navbar-brand img {
+        display:none;
+    }
+
+    #subHead {
+        font-size: 6pt;
+        padding-bottom:10px;
+        -webkit-transition: all .3s;
+        -moz-transition: all .3s;
+        transition: all .3s;
+    } 
+
+}
+
+@media all and (min-width: 481px) and (max-width: 1024px) { 
+       .navbar-default {
+        padding: 11px 0 20px 0;
+        -webkit-transition: padding .3s;
+        -moz-transition: padding .3s;
+        transition: padding .3s;
+    }
+
+    .navbar-default .navbar-brand {
+        font-size: 17pt;
+        width:260px;
+/*        -webkit-transition: all .3s;
+        -moz-transition: all .3s;
+        transition: all .3s;*/
+    }
+
+    .navbar-default .navbar-brand img {
+        display: none;
+    }
+
+    #subHead {
+        font-size: 7pt;
+        padding-bottom:10px;
+        -webkit-transition: all .3s;
+        -moz-transition: all .3s;
+        transition: all .3s;
+    } 
+
+}
+
+@media(min-width:1025px) {
     .navbar-default {
         padding: 11px 0 20px 0;
         -webkit-transition: padding .3s;
@@ -239,6 +300,7 @@ fieldset[disabled] .btn-xl.active {
 
     .navbar-default .navbar-brand {
         font-size: 1.3em;
+        width:470px;
 /*        -webkit-transition: all .3s;
         -moz-transition: all .3s;
         transition: all .3s;*/
@@ -291,43 +353,98 @@ header .intro-text {
 }
 
 header .intro-text .intro-lead-in {
-    margin-bottom: 25px;
-    font-family: "Droid Serif","Helvetica Neue",Helvetica,Arial,sans-serif;
-    font-size: 22px;
+    margin: 55px 0 55px 0;
+    font-family: "Arvo","Helvetica Neue",Helvetica,Arial,sans-serif;
+    font-size: 90px;
     font-style: italic;
     line-height: 22px;
 }
 
 header .intro-text .intro-heading {
     margin-bottom: 25px;
-    text-transform: uppercase;
-    font-family: Montserrat,"Helvetica Neue",Helvetica,Arial,sans-serif;
-    font-size: 50px;
+    font-family: Signika,"Helvetica Neue",Helvetica,Arial,sans-serif;
+    font-size: 20px;
     font-weight: 700;
-    line-height: 50px;
 }
+
+header .intro-text .intro-intro {
+        margin-bottom: 35px;
+        font-family: Arvo,"Helvetica Neue",Helvetica,Arial,sans-serif;
+        font-size: 25pt;
+        font-weight: 700;
+        font-style: italic;
+        line-height: 30pt;
+        color:#ff6634;
+    }
 
 @media(min-width:768px) {
     header .intro-text {
-        padding-top: 300px;
+        padding-top: 260px;
         padding-bottom: 200px;
     }
 
     header .intro-text .intro-lead-in {
-        margin-bottom: 25px;
-        font-family: "Droid Serif","Helvetica Neue",Helvetica,Arial,sans-serif;
-        font-size: 40px;
+        margin: 5px 0 25px 0;
+        font-family: "Arvo","Helvetica Neue",Helvetica,Arial,sans-serif;
+        font-size: 120pt;
         font-style: italic;
         line-height: 40px;
     }
 
     header .intro-text .intro-heading {
-        margin-bottom: 50px;
-        text-transform: uppercase;
-        font-family: Montserrat,"Helvetica Neue",Helvetica,Arial,sans-serif;
-        font-size: 75px;
+        margin: 70px 0 25px 0;
+        font-family: Arvo,"Helvetica Neue",Helvetica,Arial,sans-serif;
+        font-size: 25pt;
+        font-weight: 400;
+        font-style: italic;
+    }
+
+    header .intro-text .intro-intro {
+        margin-bottom: 35px;
+        font-family: Arvo,"Helvetica Neue",Helvetica,Arial,sans-serif;
+        font-size: 25pt;
         font-weight: 700;
-        line-height: 75px;
+        font-style: italic;
+        line-height: 30pt;
+        color:#ff6634;
+    }
+}
+
+@media(min-width:769px) {
+    header .intro-text {
+        padding-top: 260px;
+        padding-bottom: 200px;
+        text-align: left;
+    }
+
+    header .intro-text .intro-lead-in {
+        margin: 5px 0 25px 0;
+        font-family: "Arvo","Helvetica Neue",Helvetica,Arial,sans-serif;
+        font-size: 120pt;
+        font-style: italic;
+        line-height: 40px;
+        text-align: left;
+    }
+
+    header .intro-text .intro-heading {
+        margin: 70px 0 25px 0;
+        font-family: Arvo,"Helvetica Neue",Helvetica,Arial,sans-serif;
+        font-size: 21pt;
+        font-weight: 400;
+        font-style: italic;
+        line-height: 30pt;
+        text-align: left;
+    }
+
+    header .intro-text .intro-intro {
+        margin-bottom: 35px;
+        font-family: Arvo,"Helvetica Neue",Helvetica,Arial,sans-serif;
+        font-size: 25pt;
+        font-weight: 700;
+        font-style: italic;
+        line-height: 30pt;
+        color:#ff6634;
+        text-align: left;
     }
 }
 

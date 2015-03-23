@@ -4175,7 +4175,7 @@ select[multiple].input-group-sm > .input-group-btn > .btn {
   .navbar > .container .navbar-brand,
   .navbar > .container-fluid .navbar-brand {
     margin-left: -15px;
-    width:670px;
+/*    width:260px;*/
   }
   
   .navbar img {
