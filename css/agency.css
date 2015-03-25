@@ -9,7 +9,7 @@ body {
     font-family: "Roboto Slab","Helvetica Neue",Helvetica,Arial,sans-serif;
 }
 
-.text-muted {
+.text-highlight {
     color: #777;
 }
 
@@ -20,10 +20,11 @@ body {
 p {
     font-size: 14px;
     line-height: 1.75;
+    color: #000;
 }
 
 p.large {
-    font-size: 16px;
+    font-size: 12pt;
 }
 
 a,
@@ -52,8 +53,23 @@ h4,
 h5,
 h6 {
     text-transform: uppercase;
-    font-family: Montserrat,"Helvetica Neue",Helvetica,Arial,sans-serif;
+    font-family: Arvo,"Helvetica Neue",Helvetica,Arial,sans-serif;
     font-weight: 700;
+}
+
+h2 {
+    background-color:#ff6634;
+    border-radius: 10px;
+    padding:5px;
+    color:#000;
+    font-weight: 400;
+}
+
+h4 {
+    background-color:#ff6634;
+    border-radius: 10px;
+    padding:5px;
+    color:#000;
 }
 
 .img-centered {
@@ -454,7 +470,7 @@ section {
 
 section h2.section-heading {
     margin-top: 0;
-    margin-bottom: 15px;
+    margin-bottom: 40px;
     font-size: 40px;
 }
 
@@ -469,7 +485,7 @@ section h3.section-subheading {
 
 @media(min-width:768px) {
     section {
-        padding: 150px 0 250px 0;
+        padding: 150px 0 400px 0;
     }
 }
 
@@ -478,6 +494,16 @@ section#profile {
     background-position: center center;
     background-repeat: repeat;
     background-attachment: fixed;
+}
+
+.profile-callout {
+    margin: 15px 0;
+    text-transform: none;
+    background-color:#ff6634;
+    border-radius: 10px;
+    padding:5px;
+    color:#000;
+    font-weight: 700;
 }
 
 .service-heading {
