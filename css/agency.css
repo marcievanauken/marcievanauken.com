@@ -54,7 +54,7 @@ a.active {
 
 h1,
 h2,
-h3,
+/*h3,*/
 h4,
 h5,
 h6 {
@@ -70,6 +70,19 @@ h2 {
     color:#000;
     font-weight: 400;
     display:inline-block;
+}
+
+h3 {
+    background-color:#000000;
+    border-radius: 10px;
+    padding:15px;
+    color:#ffffff;
+    font-weight: 300;
+    display:inline-block;
+    letter-spacing: 2px; 
+    font-size:19px; 
+    text-transform: uppercase;
+    font-family: Signika,"Helvetica Neue",Helvetica,Arial,sans-serif;
 }
 
 h4 {
@@ -401,8 +414,14 @@ header .intro-text .intro-intro {
 }
 
 header .hello-orange {
-    margin-left:105px;
-    margin-top:-80px;
+   margin:165px 0 0 0;
+  /* display:none;*/
+}
+
+header .orange-top {
+    margin:190px 0 0 165px;
+    float:left;
+    position:absolute;
 }
 
 header .hello-orange-top{
@@ -412,6 +431,8 @@ header .hello-orange-top{
    background-repeat: no-repeat;
    cursor: hand;
    cursor: pointer;
+   float:left;
+   margin-right:5px;
 }
 
 header .hello-orange-top:hover{
@@ -426,10 +447,10 @@ header .hello-orange-bottom{
    height: 450px;
    width: 244px;
    background-repeat: no-repeat;
-/*   margin-top:-227px;
-   margin-left:55px;*/
+   margin-top:65px;
    cursor: hand;
    cursor: pointer;
+   float:left;
 }
 
 header .hello-orange-bottom:hover{
@@ -453,7 +474,7 @@ header .hello-orange-bottom:hover{
 @media(min-width:768px)  {
     header .intro-text {
         padding-top: 260px;
-        padding-bottom: 0;
+        padding-bottom: 50px;
     }
 
     header .intro-text .intro-lead-in {
@@ -488,11 +509,6 @@ header .hello-orange-bottom:hover{
     header .page-scroll {
         float:left;
         margin-bottom:75px;
-    }
-
-    header .hello-orange {
-       margin:195px 0 55px 16px;
-      /* display:none;*/
     }
 
 }
