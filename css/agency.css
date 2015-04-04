@@ -75,7 +75,7 @@ h2 {
 h3 {
     background-color:#000000;
     border-radius: 10px;
-    padding:15px;
+    padding:25px 155px;
     color:#ffffff;
     font-weight: 300;
     display:inline-block;
@@ -415,11 +415,10 @@ header .intro-text .intro-intro {
 
 header .hello-orange {
    margin:165px 0 0 0;
-  /* display:none;*/
 }
 
-header .orange-top {
-    margin:190px 0 0 165px;
+header #orange-top {
+    margin:190px 0 0 30px;
     float:left;
     position:absolute;
 }
@@ -432,7 +431,6 @@ header .hello-orange-top{
    cursor: hand;
    cursor: pointer;
    float:left;
-   margin-right:5px;
 }
 
 header .hello-orange-top:hover{
@@ -460,16 +458,12 @@ header .hello-orange-bottom:hover{
    background-repeat: no-repeat;
 }
 
-@media (max-width: 767px) {
+@media (max-width: 991px) {
     header .hello-orange {
         display:none;
     }  
 }
 
-/*
-@media (min-width: 579px) and (max-width:992px) {
-}
-*/
 
 @media(min-width:768px)  {
     header .intro-text {
@@ -513,7 +507,8 @@ header .hello-orange-bottom:hover{
 
 }
 
-@media(min-width:769px) and (max-width:992px) {
+/*@media(min-width:769px) and (max-width:992px) {*/
+@media(min-width:769px) and (max-width:1024px) {
     header .intro-text {
         padding-top: 260px;
         padding-bottom: 200px;
@@ -554,6 +549,107 @@ header .hello-orange-bottom:hover{
         float:left;
     }
 
+    header .hello-orange {
+       margin:275px 0 0 70px;
+    }
+
+    header #orange-top {
+        margin:120px 0;
+        float:left;
+        position:absolute;
+    }
+
+    header .hello-orange-top{
+       background-image: url('../images/hello/orange-top-smaller.png');
+       height: 269px;
+       width: 162px;
+       background-repeat: no-repeat;
+       cursor: hand;
+       cursor: pointer;
+       float:left;
+    }
+
+    header .hello-orange-top:hover{
+       background-image: url('../images/hello/orange-top-smaller-hover.png');
+       height: 269px;
+       width: 162px;
+       background-repeat: no-repeat;
+    }
+
+    header .hello-orange-bottom{
+       background-image: url('../images/hello/orange-bottom-smaller.png');
+       height: 269px;
+       width: 156px;
+       background-repeat: no-repeat;
+       margin-top:65px;
+       cursor: hand;
+       cursor: pointer;
+       float:left;
+    }
+
+    header .hello-orange-bottom:hover{
+       background-image: url('../images/hello/orange-bottom-smaller-hover.png');
+       height: 269px;
+       width: 156px;
+       background-repeat: no-repeat;
+    }
+
+    header h3 {
+        padding:20px 90px;
+    }
+
+}
+
+
+@media(min-width:1024px) and (max-width:1199px) {
+    header .hello-orange {
+       margin:275px 0 0 70px;
+    }
+
+    header #orange-top {
+        margin:120px 0;
+        float:left;
+        position:absolute;
+    }
+
+    header .hello-orange-top{
+       background-image: url('../images/hello/orange-top-smaller.png');
+       height: 269px;
+       width: 162px;
+       background-repeat: no-repeat;
+       cursor: hand;
+       cursor: pointer;
+       float:left;
+    }
+
+    header .hello-orange-top:hover{
+       background-image: url('../images/hello/orange-top-smaller-hover.png');
+       height: 269px;
+       width: 162px;
+       background-repeat: no-repeat;
+    }
+
+    header .hello-orange-bottom{
+       background-image: url('../images/hello/orange-bottom-smaller.png');
+       height: 269px;
+       width: 156px;
+       background-repeat: no-repeat;
+       margin-top:65px;
+       cursor: hand;
+       cursor: pointer;
+       float:left;
+    }
+
+    header .hello-orange-bottom:hover{
+       background-image: url('../images/hello/orange-bottom-smaller-hover.png');
+       height: 269px;
+       width: 156px;
+       background-repeat: no-repeat;
+    }
+
+    header h3 {
+        padding:20px 90px;
+    }
 }
 
 section {
@@ -909,6 +1005,7 @@ section#contact {
 section#contact p.large {
     font-size:22pt;
     margin-bottom:40px;
+    text-align: left;
 }
 
 section#contact .form-group {
@@ -965,6 +1062,92 @@ section#contact:-ms-input-placeholder {
 
 section#contact .text-danger {
     color: #e74c3c;
+}
+
+section#contact .contact-right {
+   margin:0 0 0 10%;
+}
+
+section#contact #contact-orange-type {
+   display: none;
+}
+
+section#contact .contact-right:hover #contact-orange-type { display: block; }
+
+section#contact p {
+    text-align: center;
+    font-weight: 700;
+    font-size:14pt;
+}
+
+section#contact h3 {
+    margin:0 0 10px 0;
+}
+
+section#contact #contact-orange-type {
+    margin:150px 0 0 6px;
+    float:left;
+    position:absolute;
+}
+
+section#contact .contact-orange{
+   background-image: url('../images/contact/contact-orange.png');
+   height: 448px;
+   width: 465px;
+   background-repeat: no-repeat;
+   cursor: hand;
+   cursor: pointer;
+   float:left;
+   margin-left: 10px;
+}
+
+section#contact .contact-orange:hover{
+   background-image: url('../images/contact/contact-orange-hover.png');
+   height: 448px;
+   width: 465px;
+   background-repeat: no-repeat;
+}
+
+@media(max-width:991px) {
+       
+    #contact .contact-right .contact-orange{
+        display:none;    
+    }
+}
+
+@media(min-width:769px) and (max-width:1024px) {
+
+    section#contact .contact-right {
+       margin:0 0 0 10%;
+    }
+
+    section#contact .contact-right #contact-orange-type{
+        margin:90px 0;
+        float:left;
+        position:absolute;
+    }
+
+    section#contact .contact-right .contact-orange{
+       background-image: url('../images/contact/contact-orange-smaller.png');
+       height: 297px;
+       width: 309px;
+       background-repeat: no-repeat;
+       cursor: hand;
+       cursor: pointer;
+       float:left;
+    }
+
+    section#contact .contact-right .contact-orange:hover{
+       background-image: url('../images/contact/contact-orange-smaller-hover.png');
+       height: 297px;
+       width: 309px;
+       background-repeat: no-repeat;
+    }
+
+    section#contact .contact-right h3 {
+        padding:20px 90px;
+    }
+
 }
 
 footer {

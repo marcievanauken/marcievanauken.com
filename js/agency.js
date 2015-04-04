@@ -25,3 +25,24 @@ $('.navbar-collapse ul li a').click(function() {
     $('.navbar-toggle:visible').click();
 });
 
+
+//Hides and Shows orange bar on header
+function hide_orangebar() {
+	document.getElementById('orange-top').style.visibility="hidden";
+}
+function show_orangebar() {
+	document.getElementById('orange-top').style.visibility="visible";
+}
+
+//Hides and Shows orange bar on contact - css is hiding it onload
+
+function show_orangetype() {
+	document.getElementById('contact-orange-type').style.visibility="visible";
+}
+function hide_orangetype() {
+	document.getElementById('contact-orange-type').style.visibility="hidden";
+}
+
+
+
+

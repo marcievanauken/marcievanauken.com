@@ -18,6 +18,7 @@
     <link href="css/agency.css" rel="stylesheet">
 
     <!-- Custom Fonts -->
+    <link href="font-awesome/css/font-awesome.min.css" rel="stylesheet" type="text/css">
     <link href='http://fonts.googleapis.com/css?family=Arvo:400,700,400italic,700italic' rel='stylesheet' type='text/css'>
     <link href='http://fonts.googleapis.com/css?family=Signika:400,300,600,700' rel='stylesheet' type='text/css'>
 
@@ -90,12 +91,12 @@
                 </div>
                 <div class="col-md-6">
                     <div class="col-md-12">
-                        <div class="hello-orange"> 
+                        <div class="hello-orange" onMouseOver="hide_orangebar()" onMouseOut="show_orangebar()"> 
+                            
+                                <div id="orange-top">
+                                    <h3>Take A Slice</h3>
+                                </div>
 
-                            <div class="orange-top">
-                                <h3>Take A Slice</h3>
-                            </div>
-                        
                            <!--  <div class="col-md-6"> -->
                                 <div class="hello-orange-top"></div>
                             <!-- </div> -->
@@ -458,7 +459,7 @@
             <div class="row">
                 <div class="col-md-12">
                     <h2 class="section-heading">Contact Me</h2>
-                    <p class="large">Feel free to say hello!</p>
+                    <!-- <p class="large">Feel free to say hello!</p> -->
                 </div>
             </div>
             <div class="row">
@@ -488,9 +489,21 @@
                     </form>
                 </div>
                 <div class="col-md-6">
-                        <div class="contact-right">
-                            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ratione laborum recusandae nisi corrupti incidunt, hic non, reprehenderit rerum, optio vel architecto deserunt accusantium velit asperiores. Sit at minus voluptate aperiam. Lorem ipsum dolor sit amet, consectetur adipisicing elit. Autem ipsa minus, praesentium a? Perspiciatis qui, magnam rem incidunt, aperiam esse ea sapiente. Laborum ullam, sint. Consectetur repellat harum, iusto illo.Lorem ipsum dolor sit amet, consectetur adipisicing elit. Sint dignissimos, maiores similique laudantium assumenda nisi voluptate aliquam praesentium dolore omnis laborum, fugiat odit quaerat minus nemo alias debitis, dolorum quam.Lorem ipsum dolor sit amet, consectetur adipisicing elit. Nobis unde, dicta officiis? Temporibus at veniam non laboriosam nostrum hic nesciunt sed ut consequuntur provident vel eligendi, tempore quos tempora minima?  </p>
-                        </div> 
+                    <div class="col-md-12">
+                        <div class="contact-right"> 
+                            
+                                <div id="contact-orange-type">
+                                    <p>Please say hello &amp;</p>
+                                    <h3>Thank you!</h3>
+                                    <p>for stopping by!</p>
+                                </div>
+
+                           <!--  <div class="col-md-6"> -->
+                                <div class="contact-orange" onMouseOver="show_orangetype()" onMouseOut="hide_orangetype()"></div>
+                            <!-- </div> -->
+                        </div>
+                    </div>
+                </div>
                 </div>
             </div>
         </div>
