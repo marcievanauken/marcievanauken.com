@@ -765,10 +765,13 @@ section#resume h2 {
     box-shadow:0 0 8px 0px gray inset;
     background-color: #000;
     margin: 0 10px 0 0;
+    cursor: hand;
+    cursor: pointer;
 }
 #resume-radio input[type='radio']:hover {
     box-shadow:0 0 5px 0px orange inset;
 }
+
 #resume-radio input[type='radio']:before {
     content:'';
     display:block;
@@ -777,11 +780,16 @@ section#resume h2 {
     margin: 24% auto;    
     border-radius:50%;    
 }
+
 #resume-radio input[type='radio']:checked:before {
     background-color: #ff6634;
 }
 
-#resume .resume-experience {
+/*section#resume .resume-left {
+    display:none;
+}*/
+
+section#resume .resume-experience {
     width:100%;
     height:100%;
     background-color: rgba(0,0,0,.5 );
@@ -790,36 +798,67 @@ section#resume h2 {
     margin-top:20px;
 }
 
-#resume .resume-experience p {
+section#resume .resume-experience p {
     color:#fff;
 }
 
-#resume .skills ul {
+section#resume .resume-experience .bxslider {
+    padding:0;
+}
+
+section#resume .resume-experience .bxslider p.large {
+    font-size: 24pt;
+    line-height: 30pt;
+    font-family: "Arvo","Helvetica Neue",Helvetica,Arial,sans-serif;
+    margin:30px 0 2px 0;
+    padding:0;
+    font-weight: 400;
+}
+
+section#resume .resume-experience .bxslider p.job {
+    font-size: 12pt;
+    line-height: 16pt;
+    font-family: "Arvo","Helvetica Neue",Helvetica,Arial,sans-serif;
+    margin:25px 0;
+    padding:0;
+    font-weight: 400;
+}
+
+section#resume .resume-experience .bxslider p.title {
+    font-size: 12pt;
+    line-height: 16pt;
+    font-family: "Arvo","Helvetica Neue",Helvetica,Arial,sans-serif;
+    margin:30px 0 10px 0;
+    padding:0;
+    font-weight: lighter;
+}
+
+section#resume .skills ul {
     margin:10px 0;
     padding:0;
     list-style: none;
 
 }
 
-#resume .skills p {
+section#resume .skills p {
     margin:0 0 2px 0;
     padding:0;
 
 }
 
-#resume p.large {
+section#resume p.large {
     margin:0 0 2px 0;
     padding:0;
     font-weight: 600;
 
 }
 
-#resume .type {
+section#resume .type {
     margin:15px 0;
 
 }
 
-#resume .education p {
+section#resume .education p {
     margin:0 0 2px 0;
 
 }
@@ -827,17 +866,17 @@ section#resume h2 {
 /* resume */
 @media (max-width: 578px) {
 
-#resume .skills {
+section#resume .skills {
     width:350px;
     display: block;
 }
 
-#resume .skills ul {
+section#resume .skills ul {
     float:left;
     margin-right: 35px;
 } 
 
-#resume .education {
+section#resume .education {
     margin-top:350px;
 } 
 
@@ -846,17 +885,17 @@ section#resume h2 {
 /* resume */
 @media (min-width: 579px) and (max-width:992px) {
 
-#resume .skills {
+section#resume .skills {
     width:100%;
     display: block;
 }
 
-#resume .skills ul {
+section#resume .skills ul {
     float:left;
     margin-right: 45px;
 } 
 
-#resume .education {
+section#resume .education {
     margin-top:215px;
 }    
 
@@ -1072,7 +1111,9 @@ section#contact #contact-orange-type {
    display: none;
 }
 
-section#contact .contact-right:hover #contact-orange-type { display: block; }
+section#contact .contact-right:hover #contact-orange-type {
+    display: block;
+}
 
 section#contact p {
     text-align: center;

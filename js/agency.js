@@ -26,7 +26,7 @@ $('.navbar-collapse ul li a').click(function() {
 });
 
 
-//Hides and Shows orange bar on header
+//Header - Hides and Shows orange bar
 function hide_orangebar() {
 	document.getElementById('orange-top').style.visibility="hidden";
 }
@@ -34,8 +34,26 @@ function show_orangebar() {
 	document.getElementById('orange-top').style.visibility="visible";
 }
 
-//Hides and Shows orange bar on contact - css is hiding it onload
 
+//Resume - Toggles between different resume views
+$(function() {
+    $("[name=toggler]").click(function(){
+            $('.resume-experience').hide();
+            $("#resume-left-"+$(this).val()).fadeToggle();
+    });
+ });
+
+
+//Resume - experience slider
+$(document).ready(function(){
+	$('.bxslider').bxSlider({
+	  mode: 'fade',
+	  captions: true
+	});
+});
+
+
+//Contact - Hides and Shows orange bar - css is hiding it onload
 function show_orangetype() {
 	document.getElementById('contact-orange-type').style.visibility="visible";
 }
