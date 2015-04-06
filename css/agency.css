@@ -722,8 +722,18 @@ section#profile .intro-text {
 }*/
 
 section#profile .profile-slideshow img {
-    width:80%;
+    width:90%;
     margin-left:10%;
+}
+
+section#profile .profile-slideshow .fadein { 
+    position:relative; 
+    width:500px; 
+    height:332px; 
+}
+
+section#profile .profile-slideshow .fadein img { 
+    position:absolute;
 }
 
 .service-heading {
@@ -731,14 +741,16 @@ section#profile .profile-slideshow img {
     text-transform: none;
 }
 
+
+
+/* resume */
+
 section#resume {
     background-image: url(../images/resume/resume-bg.png);
     background-position: center center;
     background-repeat: repeat;
     background-attachment: fixed;
 }
-
-/* resume */
 
 section#resume h2 {
     margin-left:-15px;
