@@ -702,34 +702,17 @@ section#profile .intro-text {
     font-weight: 700;
 }
 
-@media (max-width: 992px) {
 
-    #special-callout {
-        margin-top: 40px;
-    }
-
-}
-
-/*section#profile .profile-slideshow {
-    background-image: url(../images/profile/profile-placeholder.png);
-    background-position: center center;
-    background-repeat: no-repeat;
-    height:670px;
-    -webkit-background-size: cover;
-    -moz-background-size: cover;
-    background-size: cover;
-    -o-background-size: cover;
-}*/
-
-section#profile .profile-slideshow img {
+/*section#profile .profile-slideshow img {
     width:90%;
     margin-left:10%;
-}
+}*/
 
 section#profile .profile-slideshow .fadein { 
     position:relative; 
-    width:500px; 
-    height:332px; 
+    width:590px; 
+    height:674px; 
+    border-bottom:7px solid #000;
 }
 
 section#profile .profile-slideshow .fadein img { 
@@ -739,6 +722,19 @@ section#profile .profile-slideshow .fadein img {
 .service-heading {
     margin: 15px 0;
     text-transform: none;
+}
+
+@media (max-width: 992px) {
+
+    #special-callout {
+        margin-top: 40px;
+    }
+
+    section#profile .profile-slideshow .fadein { 
+        display: none;
+    }
+
+
 }
 
 
