@@ -923,25 +923,76 @@ section#process {
     background-attachment: fixed;
 }
 
-.team-member {
-    margin-bottom: 50px;
-    text-align: center;
+section#process .process-slider {
+    width:100%;
+    height:100%;
+    background-color: rgba(0,0,0,.05 );
+    border-radius: 10px;
+    padding:25px 25px 0px 0px;
 }
 
-.team-member img {
-    margin: 0 auto;
-    border: 7px solid #fff;
+section#process .process-slider .type {
+    margin-top:15%;
 }
 
-.team-member h4 {
-    margin-top: 25px;
-    margin-bottom: 0;
-    text-transform: none;
+section#process .process-slider .type .large {
+    color:#ff6634;
+    font-family: Arvo,"Helvetica Neue",Helvetica,Arial,sans-serif;
+    font-weight: 400;
+    font-size:20pt;
+    margin-bottom:25px;
 }
 
-.team-member p {
-    margin-top: 0;
+section#process .process-slider .type p {
+    font-size:13pt;
+    line-height: 21pt;
 }
+
+section#process .process-slider img {
+    width:65%;
+    margin-left:10%;
+}
+
+section#process .process-beneath {
+    margin:50px 0;
+}
+
+section#process .process-beneath .left-large {
+    margin-bottom:20px;
+}
+
+section#process .process-beneath .orange-p {
+    color:#ff6634;
+    font-weight: 700;
+}
+
+section#process .cite {
+    color:#898989;
+    font-size: 7pt;
+    font-family: Signika,"Helvetica Neue",Helvetica,Arial,sans-serif;
+    font-weight: 700;
+}
+
+section#process .pieChartLegend {
+    margin-top:30px;
+}
+
+.legend{
+    list-style: none;
+    padding-bottom: 10px;
+    font-family: Arvo,"Helvetica Neue",Helvetica,Arial,sans-serif;
+    font-weight: 700;
+}
+
+.legend span {
+    width: 16px;
+    height: 16px;
+    display: inline-block;
+    margin-right: 4px;
+    margin-top:10px;
+}
+
+
 
 /*aside.section-break {
     background-color: #fff;
