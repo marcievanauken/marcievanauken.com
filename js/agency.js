@@ -56,8 +56,8 @@ $(function() {
     });
  });
 
-//Process - Pie chart
-var pieData = [
+//Process - Pie chart RESEARCH
+var pieDataResearch = [
     {
         value: 50,
         color:"#F7464A",
@@ -78,6 +78,28 @@ var pieData = [
     }
 ]
 
+//Process - Pie chart CONCEPTS
+var pieDataConcepts = [
+    {
+        value: 30,
+        color:"#F7464A",
+        highlight: "#FF5A5E",
+        label: "Inspiration"
+    },
+    {
+        value: 30,
+        color: "#46BFBD",
+        highlight: "#5AD3D1",
+        label: "Ideation"
+    },
+    {
+        value: 40,
+        color: "#FDB45C",
+        highlight: "#FFC870",
+        label: "Implementation"
+    }
+]
+
 
 $(document).ready(function(){
 
@@ -87,14 +109,26 @@ $(document).ready(function(){
 	  captions: true
 	});
 
-  //Process - Pie chart
-  var pieCtx = $("#pieChart").get(0).getContext("2d");
-  var myPieChart = new Chart(pieCtx).Pie(pieData, {
+  //Process - Pie chart RESEARCH
+  var pieCtx = $("#pieChartResearch").get(0).getContext("2d");
+  var myPieChart = new Chart(pieCtx).Pie(pieDataResearch, {
     legendTemplate : "<ul class=\"<%=name.toLowerCase()%>-legend legend\"><% for (var i=0; i<segments.length; i++){%><li><span style=\"background-color:<%=segments[i].fillColor%>\"></span><%if(segments[i].label){%><%=segments[i].label%> <%=(segments[i].value/total*100).toFixed(0)%>%<%}%></li><%}%></ul>"
   });
-  //Process - Pie chart legend
+
+  //Process - Pie chart LEGEND RESERCH
   var legend = myPieChart.generateLegend();
-    $('.pieChartLegend').append(legend);
+    $('.legendResearch').append(legend);
+
+  
+  //Process - Pie chart CONCEPTS
+  var pieConcepts = $("#pieChartConcepts").get(0).getContext("2d");
+  var myPieConcepts = new Chart(pieConcepts).Pie(pieDataConcepts, {
+    legendTemplate : "<ul class=\"<%=name.toLowerCase()%>-legend legend\"><% for (var i=0; i<segments.length; i++){%><li><span style=\"background-color:<%=segments[i].fillColor%>\"></span><%if(segments[i].label){%><%=segments[i].label%> <%=(segments[i].value/total*100).toFixed(0)%>%<%}%></li><%}%></ul>"
+  });
+  
+  //Process - Pie chart LEGEND RESERCH
+  var legend = myPieConcepts.generateLegend();
+    $('.legendConcepts').append(legend);
 
 
 });
