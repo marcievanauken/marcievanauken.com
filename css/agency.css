@@ -977,6 +977,10 @@ section#process .pieChartLegend {
     margin-top:30px;
 }
 
+/*section#process .chartHide {
+    display:none;
+}*/
+
 .legend{
     list-style: none;
     padding-bottom: 10px;

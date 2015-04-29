@@ -71,7 +71,7 @@ var pieDataResearch = [
         label: "Ideation"
     },
     {
-        value: 0,
+        value: 20,
         color: "#FDB45C",
         highlight: "#FFC870",
         label: "Implementation"
@@ -100,6 +100,51 @@ var pieDataConcepts = [
     }
 ]
 
+//Process - Pie chart REVISE
+var pieDataRevise = [
+    {
+        value: 30,
+        color:"#F7464A",
+        highlight: "#FF5A5E",
+        label: "Inspiration"
+    },
+    {
+        value: 10,
+        color: "#46BFBD",
+        highlight: "#5AD3D1",
+        label: "Ideation"
+    },
+    {
+        value: 90,
+        color: "#FDB45C",
+        highlight: "#FFC870",
+        label: "Implementation"
+    }
+]
+
+
+//Process - Pie chart DESIGN
+var pieDataDesign = [
+    {
+        value: 45,
+        color:"#F7464A",
+        highlight: "#FF5A5E",
+        label: "Inspiration"
+    },
+    {
+        value: 20,
+        color: "#46BFBD",
+        highlight: "#5AD3D1",
+        label: "Ideation"
+    },
+    {
+        value: 05,
+        color: "#FDB45C",
+        highlight: "#FFC870",
+        label: "Implementation"
+    }
+]
+
 
 $(document).ready(function(){
 
@@ -108,6 +153,9 @@ $(document).ready(function(){
 	  mode: 'fade',
 	  captions: true
 	});
+
+
+
 
   //Process - Pie chart RESEARCH
   var pieCtx = $("#pieChartResearch").get(0).getContext("2d");
@@ -120,18 +168,66 @@ $(document).ready(function(){
     $('.legendResearch').append(legend);
 
   
+
+
+
   //Process - Pie chart CONCEPTS
   var pieConcepts = $("#pieChartConcepts").get(0).getContext("2d");
   var myPieConcepts = new Chart(pieConcepts).Pie(pieDataConcepts, {
     legendTemplate : "<ul class=\"<%=name.toLowerCase()%>-legend legend\"><% for (var i=0; i<segments.length; i++){%><li><span style=\"background-color:<%=segments[i].fillColor%>\"></span><%if(segments[i].label){%><%=segments[i].label%> <%=(segments[i].value/total*100).toFixed(0)%>%<%}%></li><%}%></ul>"
   });
   
-  //Process - Pie chart LEGEND RESERCH
+  //Process - Pie chart LEGEND CONCEPTS
   var legend = myPieConcepts.generateLegend();
     $('.legendConcepts').append(legend);
 
 
+
+
+
+
+  //Process - Pie chart REVISE
+  var pieRevise = $("#pieChartRevise").get(0).getContext("2d");
+  var myPieRevise = new Chart(pieRevise).Pie(pieDataRevise, {
+    legendTemplate : "<ul class=\"<%=name.toLowerCase()%>-legend legend\"><% for (var i=0; i<segments.length; i++){%><li><span style=\"background-color:<%=segments[i].fillColor%>\"></span><%if(segments[i].label){%><%=segments[i].label%> <%=(segments[i].value/total*100).toFixed(0)%>%<%}%></li><%}%></ul>"
+  });
+  
+  //Process - Pie chart LEGEND REVISE
+  var legend = myPieRevise.generateLegend();
+    $('.legendRevise').append(legend);
+
+
+
+
+
+
+  //Process - Pie chart DESIGN
+  var pieDesign = $("#pieChartDesign").get(0).getContext("2d");
+  var myPieDesign = new Chart(pieDesign).Pie(pieDataDesign, {
+    legendTemplate : "<ul class=\"<%=name.toLowerCase()%>-legend legend\"><% for (var i=0; i<segments.length; i++){%><li><span style=\"background-color:<%=segments[i].fillColor%>\"></span><%if(segments[i].label){%><%=segments[i].label%> <%=(segments[i].value/total*100).toFixed(0)%>%<%}%></li><%}%></ul>"
+  });
+  
+  //Process - Pie chart LEGEND DESIGN
+  var legend = myPieDesign.generateLegend();
+    $('.legendDesign').append(legend);    
+
+
+$('.chart').hide();
+$('#pcResearch').show();
+
+$('.bx-pager-item').click(function() {
+
+  // Get the # of the dot you clicked
+   var slideIndex = $(this).children().eq(0).data("slide-index");
+
+   // Hide all the charts
+   $('.chart').hide();
+
+   // Show the chart w/ the right #
+   $('.chart').eq(slideIndex).show();
 });
+
+}); //end document.ready
 
 
 //Contact - Hides and Shows orange bar - css is hiding it onload
