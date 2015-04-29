@@ -59,19 +59,19 @@ $(function() {
 //Process - Pie chart RESEARCH
 var pieDataResearch = [
     {
-        value: 50,
+        value: 65,
         color:"#F7464A",
         highlight: "#FF5A5E",
         label: "Inspiration"
     },
     {
-        value: 50,
+        value: 35,
         color: "#46BFBD",
         highlight: "#5AD3D1",
         label: "Ideation"
     },
     {
-        value: 20,
+        value: 0,
         color: "#FDB45C",
         highlight: "#FFC870",
         label: "Implementation"
@@ -81,19 +81,19 @@ var pieDataResearch = [
 //Process - Pie chart CONCEPTS
 var pieDataConcepts = [
     {
-        value: 30,
+        value: 40,
         color:"#F7464A",
         highlight: "#FF5A5E",
         label: "Inspiration"
     },
     {
-        value: 30,
+        value: 50,
         color: "#46BFBD",
         highlight: "#5AD3D1",
         label: "Ideation"
     },
     {
-        value: 40,
+        value: 10,
         color: "#FDB45C",
         highlight: "#FFC870",
         label: "Implementation"
@@ -103,7 +103,30 @@ var pieDataConcepts = [
 //Process - Pie chart REVISE
 var pieDataRevise = [
     {
-        value: 30,
+        value: 25,
+        color:"#F7464A",
+        highlight: "#FF5A5E",
+        label: "Inspiration"
+    },
+    {
+        value: 25,
+        color: "#46BFBD",
+        highlight: "#5AD3D1",
+        label: "Ideation"
+    },
+    {
+        value: 50,
+        color: "#FDB45C",
+        highlight: "#FFC870",
+        label: "Implementation"
+    }
+]
+
+
+//Process - Pie chart DESIGN
+var pieDataDesign = [
+    {
+        value: 10,
         color:"#F7464A",
         highlight: "#FF5A5E",
         label: "Inspiration"
@@ -115,30 +138,7 @@ var pieDataRevise = [
         label: "Ideation"
     },
     {
-        value: 90,
-        color: "#FDB45C",
-        highlight: "#FFC870",
-        label: "Implementation"
-    }
-]
-
-
-//Process - Pie chart DESIGN
-var pieDataDesign = [
-    {
-        value: 45,
-        color:"#F7464A",
-        highlight: "#FF5A5E",
-        label: "Inspiration"
-    },
-    {
-        value: 20,
-        color: "#46BFBD",
-        highlight: "#5AD3D1",
-        label: "Ideation"
-    },
-    {
-        value: 05,
+        value: 80,
         color: "#FDB45C",
         highlight: "#FFC870",
         label: "Implementation"
@@ -149,10 +149,10 @@ var pieDataDesign = [
 $(document).ready(function(){
 
   //Resume - experience slider
-	$('.bxslider').bxSlider({
-	  mode: 'fade',
-	  captions: true
-	});
+$('.bxslider').bxSlider({
+  nextSelector: '#slider-next',
+  prevSelector: '#slider-prev'
+});
 
 
 
