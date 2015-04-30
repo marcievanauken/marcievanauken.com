@@ -149,10 +149,40 @@ var pieDataDesign = [
 $(document).ready(function(){
 
   //Resume - experience slider
-$('.bxslider').bxSlider({
+var slider = $('.bxslider').bxSlider({
   nextSelector: '#slider-next',
-  prevSelector: '#slider-prev'
+  prevSelector: '#slider-prev',
+  onSliderLoad: function() {
+    $('.process-slider  div.bx-pager-item').click(function() {
+      console.log("here")
+
+      // Get the # of the dot you clicked
+       var slideIndex = $(this).children().eq(0).data("slide-index");
+
+       // Hide all the charts
+       $('.chart').hide();
+
+       // Show the chart w/ the right #
+       $('.chart').eq(slideIndex).show();
+    });
+  },
+  onSliderResize: function(){
+    $('.process-slider  div.bx-pager-item').click(function() {
+      console.log("here2")
+
+      // Get the # of the dot you clicked
+       var slideIndex = $(this).children().eq(0).data("slide-index");
+
+       // Hide all the charts
+       $('.chart').hide();
+
+       // Show the chart w/ the right #
+       $('.chart').eq(slideIndex).show();
+    });
+  }
+
 });
+
 
 
 
@@ -167,7 +197,7 @@ $('.bxslider').bxSlider({
   var legend = myPieChart.generateLegend();
     $('.legendResearch').append(legend);
 
-  
+
 
 
 
@@ -176,7 +206,7 @@ $('.bxslider').bxSlider({
   var myPieConcepts = new Chart(pieConcepts).Pie(pieDataConcepts, {
     legendTemplate : "<ul class=\"<%=name.toLowerCase()%>-legend legend\"><% for (var i=0; i<segments.length; i++){%><li><span style=\"background-color:<%=segments[i].fillColor%>\"></span><%if(segments[i].label){%><%=segments[i].label%> <%=(segments[i].value/total*100).toFixed(0)%>%<%}%></li><%}%></ul>"
   });
-  
+
   //Process - Pie chart LEGEND CONCEPTS
   var legend = myPieConcepts.generateLegend();
     $('.legendConcepts').append(legend);
@@ -191,7 +221,7 @@ $('.bxslider').bxSlider({
   var myPieRevise = new Chart(pieRevise).Pie(pieDataRevise, {
     legendTemplate : "<ul class=\"<%=name.toLowerCase()%>-legend legend\"><% for (var i=0; i<segments.length; i++){%><li><span style=\"background-color:<%=segments[i].fillColor%>\"></span><%if(segments[i].label){%><%=segments[i].label%> <%=(segments[i].value/total*100).toFixed(0)%>%<%}%></li><%}%></ul>"
   });
-  
+
   //Process - Pie chart LEGEND REVISE
   var legend = myPieRevise.generateLegend();
     $('.legendRevise').append(legend);
@@ -206,26 +236,29 @@ $('.bxslider').bxSlider({
   var myPieDesign = new Chart(pieDesign).Pie(pieDataDesign, {
     legendTemplate : "<ul class=\"<%=name.toLowerCase()%>-legend legend\"><% for (var i=0; i<segments.length; i++){%><li><span style=\"background-color:<%=segments[i].fillColor%>\"></span><%if(segments[i].label){%><%=segments[i].label%> <%=(segments[i].value/total*100).toFixed(0)%>%<%}%></li><%}%></ul>"
   });
-  
+
   //Process - Pie chart LEGEND DESIGN
   var legend = myPieDesign.generateLegend();
-    $('.legendDesign').append(legend);    
+    $('.legendDesign').append(legend);
 
 
 $('.chart').hide();
 $('#pcResearch').show();
 
-$('.bx-pager-item').click(function() {
 
-  // Get the # of the dot you clicked
-   var slideIndex = $(this).children().eq(0).data("slide-index");
 
-   // Hide all the charts
-   $('.chart').hide();
+// $('.process-slider  div.bx-pager-item').click(function() {
+//   console.log("here")
 
-   // Show the chart w/ the right #
-   $('.chart').eq(slideIndex).show();
-});
+//   // Get the # of the dot you clicked
+//    var slideIndex = $(this).children().eq(0).data("slide-index");
+
+//    // Hide all the charts
+//    $('.chart').hide();
+
+//    // Show the chart w/ the right #
+//    $('.chart').eq(slideIndex).show();
+// });
 
 }); //end document.ready
 

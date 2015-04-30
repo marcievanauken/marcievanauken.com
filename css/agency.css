@@ -933,6 +933,7 @@ section#process .process-slider {
 
 section#process .process-slider .type {
     margin-top:15%;
+    margin-left:7%;
 }
 
 section#process .process-slider .type .large {
@@ -977,10 +978,6 @@ section#process .pieChartLegend {
     margin-top:30px;
 }
 
-/*section#process .chartHide {
-    display:none;
-}*/
-
 .legend{
     list-style: none;
     padding-bottom: 10px;
@@ -995,6 +992,17 @@ section#process .pieChartLegend {
     margin-right: 4px;
     margin-top:10px;
 }
+
+
+@media (max-width: 992px) {
+
+    section#process .process-beneath {
+        display: none;
+    }
+
+
+}
+
 
 
 
@@ -1192,6 +1200,8 @@ section#contact #contact-orange-type {
     margin:150px 0 0 6px;
     float:left;
     position:absolute;
+    cursor: hand;
+    cursor: pointer;
 }
 
 section#contact .contact-orange{
