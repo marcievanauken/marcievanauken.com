@@ -431,6 +431,8 @@ header .hello-orange-top{
    cursor: hand;
    cursor: pointer;
    float:left;
+    transition: background 600ms;
+   -webkit-transform: background 600ms;
 }
 
 header .hello-orange-top:hover{
@@ -449,6 +451,8 @@ header .hello-orange-bottom{
    cursor: hand;
    cursor: pointer;
    float:left;
+    transition: background 600ms;
+   -webkit-transform: background 600ms;
 }
 
 header .hello-orange-bottom:hover{
@@ -1213,6 +1217,8 @@ section#contact .contact-orange{
    cursor: pointer;
    float:left;
    margin-left: 10px;
+   transition: background 600ms;
+    -webkit-transform: background 600ms;
 }
 
 section#contact .contact-orange:hover{
@@ -1224,7 +1230,7 @@ section#contact .contact-orange:hover{
 
 @media(max-width:991px) {
        
-    #contact .contact-right .contact-orange{
+    section#contact .contact-right .contact-orange{
         display:none;    
     }
 }
