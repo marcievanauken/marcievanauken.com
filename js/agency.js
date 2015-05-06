@@ -184,9 +184,6 @@ var slider = $('.bxslider').bxSlider({
 });
 
 
-
-
-
   //Process - Pie chart RESEARCH
   var pieCtx = $("#pieChartResearch").get(0).getContext("2d");
   var myPieChart = new Chart(pieCtx).Pie(pieDataResearch, {

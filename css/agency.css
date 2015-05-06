@@ -1081,14 +1081,14 @@ section#portfolio {
     padding: 15px;
     max-width: 400px;
     text-align: center;
-    background-color: #fff;
-    border-top: 1px solid #000;
+/*    background-color: #fff;*/
+/*    border-top: 1px solid #000;*/
 }
 
 #portfolio .portfolio-item .portfolio-caption h4 {
     margin: 0;
     text-transform: none;
-    background-color: #fff;
+    background-color: transparent;
     color: #ff6634;
     font-size: 14pt;
 }
@@ -1341,6 +1341,12 @@ ul.social-buttons li a:active {
     box-shadow: none;
 }
 
+.portfolio-modal .modal-content .top {
+    width:100%;
+    background-color:#f5f5f5;
+    height:5%;
+}
+
 .portfolio-modal .modal-content h2 {
     margin-bottom: 15px;
     font-size: 3em;
@@ -1368,7 +1374,7 @@ ul.social-buttons li a:active {
 }
 
 .portfolio-modal .close-modal {
-    position: absolute;
+    position: fixed;
     top: 25px;
     right: 25px;
     width: 75px;
@@ -1406,6 +1412,44 @@ ul.social-buttons li a:active {
     display: none;
     opacity: 0;
 }
+
+.modal-slider {
+    width:100%;
+    height:100%;
+}
+
+
+.rslides {
+  position: relative;
+  list-style: none;
+  overflow: hidden;
+  width: 100%;
+  padding: 0;
+  margin: 0;
+  }
+
+.rslides li {
+  -webkit-backface-visibility: hidden;
+  position: absolute;
+  display: none;
+  width: 100%;
+  left: 0;
+  top: 0;
+  }
+
+.rslides li:first-child {
+  position: relative;
+  display: block;
+  float: left;
+  }
+
+.rslides img {
+  display: block;
+  height: auto;
+  border: 0;
+  }
+
+
 
 ::-moz-selection {
     text-shadow: none;
