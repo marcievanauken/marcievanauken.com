@@ -1089,12 +1089,11 @@ section#portfolio {
     margin: 0;
     text-transform: none;
     background-color: transparent;
-    color: #ff6634;
+    color: #000000;
     font-size: 14pt;
 }
 
 #portfolio .portfolio-item .portfolio-caption p {
-    margin: 2px 0 0 0;
     font-family: "Signika","Helvetica Neue",Helvetica,Arial,sans-serif;
     font-size: 16px;
 }
@@ -1348,8 +1347,9 @@ ul.social-buttons li a:active {
 }
 
 .portfolio-modal .modal-content h2 {
-    margin-bottom: 15px;
+    margin-top: 15px;
     font-size: 3em;
+    background-color: transparent;
 }
 
 .portfolio-modal .modal-content p {
@@ -1357,7 +1357,6 @@ ul.social-buttons li a:active {
 }
 
 .portfolio-modal .modal-content p.item-intro {
-    margin: 20px 0 30px;
     font-family: "Arvo","Helvetica Neue",Helvetica,Arial,sans-serif;
     font-weight: 400;
     font-size: 16px;
@@ -1370,7 +1369,7 @@ ul.social-buttons li a:active {
 }
 
 .portfolio-modal .modal-content img {
-    margin-bottom: 30px;
+/*    margin-bottom: 30px;*/
 }
 
 .portfolio-modal .close-modal {
