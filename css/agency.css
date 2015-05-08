@@ -814,11 +814,11 @@ section#resume .resume-experience p {
     color:#fff;
 }
 
-section#resume .resume-experience .bxslider {
+section#resume .resume-experience .resslider {
     padding:0;
 }
 
-section#resume .resume-experience .bxslider p.large {
+section#resume .resume-experience .resslider p.large {
     font-size: 24pt;
     line-height: 30pt;
     font-family: "Arvo","Helvetica Neue",Helvetica,Arial,sans-serif;
@@ -827,7 +827,7 @@ section#resume .resume-experience .bxslider p.large {
     font-weight: 400;
 }
 
-section#resume .resume-experience .bxslider p.job {
+section#resume .resume-experience .resslider p.job {
     font-size: 12pt;
     line-height: 16pt;
     font-family: "Arvo","Helvetica Neue",Helvetica,Arial,sans-serif;
@@ -836,13 +836,28 @@ section#resume .resume-experience .bxslider p.job {
     font-weight: 400;
 }
 
-section#resume .resume-experience .bxslider p.title {
+section#resume .resume-experience .resslider p.title {
     font-size: 12pt;
     line-height: 16pt;
     font-family: "Arvo","Helvetica Neue",Helvetica,Arial,sans-serif;
     margin:30px 0 10px 0;
     padding:0;
     font-weight: lighter;
+}
+
+/*section#resume .resume-experience .outside {
+    width:73px;
+    margin:0 auto;
+}*/
+
+section#resume #slider-prev {
+    position:absolute;
+    margin:-35px 0 0 27%;
+}
+
+section#resume #slider-next {
+    position:absolute;
+    margin:-35px 0 0 55%;
 }
 
 section#resume .skills ul {
@@ -909,6 +924,10 @@ section#resume .skills ul {
 
 section#resume .education {
     margin-top:215px;
+} 
+
+section#resume .outside {
+    display:none;
 }    
 
 
@@ -933,6 +952,11 @@ section#process .process-slider {
     background-color: rgba(0,0,0,.05 );
     border-radius: 10px;
     padding:25px 25px 0px 0px;
+}
+
+section#process .process-slider .outside {
+    width:73px;
+    margin:0 auto;
 }
 
 section#process .process-slider .type {

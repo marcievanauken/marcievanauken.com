@@ -147,38 +147,24 @@ var pieDataDesign = [
 
 
 $(document).ready(function(){
-
-  //Resume - experience slider
-var slider = $('.bxslider').bxSlider({
+//Resume - experience slider
+  $('.resslider').bxSlider({
   nextSelector: '#slider-next',
   prevSelector: '#slider-prev',
-  onSliderLoad: function() {
-    $('.process-slider  div.bx-pager-item').click(function() {
-      console.log("here")
+  nextText: '<i class="fa fa-arrow-right"></i>',
+  prevText: '<i class="fa fa-arrow-left"></i>'
+});
 
-      // Get the # of the dot you clicked
-       var slideIndex = $(this).children().eq(0).data("slide-index");
+  //Prcess - experience slider
+var slider = $('.bxslider').bxSlider({
+  nextSelector: '#proc-slider-next',
+  prevSelector: '#proc-slider-prev',
+  onSlideBefore: function($slideElement, oldIndex, newIndex) {
+      // Hide all the charts
+      $('.chart').hide();
 
-       // Hide all the charts
-       $('.chart').hide();
-
-       // Show the chart w/ the right #
-       $('.chart').eq(slideIndex).show();
-    });
-  },
-  onSliderResize: function(){
-    $('.process-slider  div.bx-pager-item').click(function() {
-      console.log("here2")
-
-      // Get the # of the dot you clicked
-       var slideIndex = $(this).children().eq(0).data("slide-index");
-
-       // Hide all the charts
-       $('.chart').hide();
-
-       // Show the chart w/ the right #
-       $('.chart').eq(slideIndex).show();
-    });
+      // Show the chart w/ the right #
+      $('.chart').eq(newIndex).show();
   }
 
 });
