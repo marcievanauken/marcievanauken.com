@@ -151,14 +151,16 @@ $(document).ready(function(){
   $('.resslider').bxSlider({
   nextSelector: '#slider-next',
   prevSelector: '#slider-prev',
-  nextText: '<i class="fa fa-arrow-right"></i>',
-  prevText: '<i class="fa fa-arrow-left"></i>'
+  nextText: '<i class="fa fa-arrow-circle-right fa-lg"></i>',
+  prevText: '<i class="fa fa-arrow-circle-left fa-lg"></i>'
 });
 
   //Prcess - experience slider
 var slider = $('.bxslider').bxSlider({
   nextSelector: '#proc-slider-next',
   prevSelector: '#proc-slider-prev',
+  nextText: '<i class="fa fa-arrow-circle-right fa-lg"></i>',
+  prevText: '<i class="fa fa-arrow-circle-left fa-lg"></i>',
   onSlideBefore: function($slideElement, oldIndex, newIndex) {
       // Hide all the charts
       $('.chart').hide();

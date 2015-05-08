@@ -910,7 +910,31 @@ section#resume .education {
 }
 
 /* resume */
-@media (min-width: 579px) and (max-width:992px) {
+/*@media (min-width: 579px) and (max-width:992px) {
+
+section#resume .skills {
+    width:100%;
+    display: block;
+}
+
+section#resume .skills ul {
+    float:left;
+    margin-right: 45px;
+} 
+
+section#resume .education {
+    margin-top:215px;
+} 
+
+section#resume .outside {
+    display:none;
+}    
+
+
+}*/
+
+/* resume */
+@media (max-width:992px) {
 
 section#resume .skills {
     width:100%;
@@ -954,11 +978,6 @@ section#process .process-slider {
     padding:25px 25px 0px 0px;
 }
 
-section#process .process-slider .outside {
-    width:73px;
-    margin:0 auto;
-}
-
 section#process .process-slider .type {
     margin-top:15%;
     margin-left:7%;
@@ -980,6 +999,20 @@ section#process .process-slider .type p {
 section#process .process-slider img {
     width:65%;
     margin-left:10%;
+}
+
+section#process .process-slider .outside {
+    margin:0 auto;
+}
+
+section#process #proc-slider-prev {
+    position:absolute;
+    margin:-35px 0 0 38%;
+}
+
+section#process #proc-slider-next {
+    position:absolute;
+    margin:-35px 0 0 55%;
 }
 
 section#process .process-beneath {
@@ -1025,6 +1058,10 @@ section#process .pieChartLegend {
 @media (max-width: 992px) {
 
     section#process .process-beneath {
+        display: none;
+    }
+
+    section#process .process-slider .outside {
         display: none;
     }
 
@@ -1433,6 +1470,15 @@ ul.social-buttons li a:active {
     -webkit-transform: rotate(90deg);
     -ms-transform: rotate(90deg);
     transform: rotate(90deg);
+}
+
+@media (max-width: 992px) {
+
+    .portfolio-modal .close-modal {
+        display: none;
+    }
+
+
 }
 
 .portfolio-modal .modal-backdrop {
