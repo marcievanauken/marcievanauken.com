@@ -5746,6 +5746,7 @@ button.close {
 }
 .modal-content {
   position: relative;
+/*  background-color: #16e0eb;*/ /* BLUE COLOR */
   background-color: #f5f5f5;
   -webkit-background-clip: padding-box;
           background-clip: padding-box;
