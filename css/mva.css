@@ -26,6 +26,15 @@ p {
     letter-spacing: 1px; 
 }
 
+li {
+    font-size: 10pt;
+    line-height: 14pt;
+    color: #000;
+    font-family: Signika,"Helvetica Neue",Helvetica,Arial,sans-serif;
+    font-weight: 300;
+    letter-spacing: 1px; 
+}
+
 p.large {
     font-size: 12pt;
     line-height: 16pt;
@@ -292,11 +301,12 @@ fieldset[disabled] .btn-xl.active {
         -webkit-transition: all .3s;
         -moz-transition: all .3s;
         transition: all .3s;
-    } 
+    }
 
 }
 
 @media all and (min-width: 481px) and (max-width: 1024px) { 
+
        .navbar-default {
         padding: 11px 0 20px 0;
         -webkit-transition: padding .3s;
@@ -800,6 +810,12 @@ section#resume h2 {
 /*section#resume .resume-left {
     display:none;
 }*/
+section#capstone {
+    background-image: url(../images/portfolio/portfolio-bg.png);
+    background-position: center center;
+    background-repeat: repeat;
+    background-attachment: fixed;
+}
 
 section#resume .resume-experience {
     width:100%;
@@ -947,7 +963,7 @@ section#resume .skills ul {
 } 
 
 section#resume .education {
-    margin-top:215px;
+    margin-top:305px;
 } 
 
 section#resume .outside {
@@ -1291,6 +1307,10 @@ section#contact .contact-orange:hover{
 @media(max-width:991px) {
        
     section#contact .contact-right .contact-orange{
+        display:none;    
+    }
+
+    section#capstone .capstone{
         display:none;    
     }
 }
